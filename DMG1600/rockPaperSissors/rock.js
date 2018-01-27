@@ -1,4 +1,5 @@
 /*jslint devel: true*/
+/*eslint-env browser*/
     
 var weapon, compWeapon;
 var compChoice;
@@ -8,6 +9,7 @@ weapon = prompt('Select your weapon: rock, paper, scissors');
 compChoice = Math.floor(Math.random() * 3);
 //compChoice = 2;
 
+weapon = weapon.trim();
 if (!(weapon === 'rock' || weapon === 'paper' || weapon === 'scissors')) {
     alert(weapon + ' is not a vaild weapon');
 }
